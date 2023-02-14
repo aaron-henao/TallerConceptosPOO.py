@@ -1,9 +1,10 @@
 import math
+import random
 
 
 class Punto:
 
-    def __init__(self, x: int, y: int, x2: int, y2: int):
+    def __init__(self, x: int, y: int, x2: random, y2: random):
 
         self.x = x
         self.y = y
