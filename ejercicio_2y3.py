@@ -4,12 +4,12 @@ import random
 
 class Punto:
 
-    def __init__(self, x: int, y: int, x2: random, y2: random):
+    def __init__(self, x: int, y: int):
 
         self.x = x
         self.y = y
-        self.x2 = x2
-        self.y2 = y2
+        self.x2 = random(-100, 100)
+        self.y2 = random(-100, 100)
 
     def mostrar(self):
         return self.x, self.y
@@ -17,9 +17,9 @@ class Punto:
     def mover(self):
         return self.x2, self.y2
 
-    def calcular_distancia(self, distancia: float):
-        self.distancia = math.sqrt((self.x2-self.x)**2+(self.y2-self.y)**2)
-        return distancia
+    def calcular_distancia(self) -> float:
+        return math.sqrt((self.x2-self.x)**2+(self.y2-self.y)**2)
+
 
 
 
